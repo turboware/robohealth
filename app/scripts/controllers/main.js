@@ -7,21 +7,17 @@
  * # MainCtrl
  * Controller of the myDemoApp
  */
-angular.module('myDemoApp',['ui.bootstrap'])
-  .controller('MainCtrl',
-   ['$scope','$q'
-    'machineListService',
-    'metricInfoService',
-    'notificationDetailService',
-    'alertDetailsService', 
-  	function($scope, $q, machineListService, metricInfoService, notificationDetailService, alertDetailsService) {
+ 
+angular.module('myDemoApp')
+  .controller('MainCtrl', 
+   ['$scope','machineListService','metricInfoService','notificationDetailService','alertDetailsService', function($scope, machineListService, metricInfoService, notificationDetailService, alertDetailsService) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-
+    var $jq = jQuery.noConflict();
 
 
     $scope.oneAtATime = true;
@@ -70,7 +66,7 @@ angular.module('myDemoApp',['ui.bootstrap'])
     };
     $scope.getAll();
     /**highcharts**/
-    $('#highchart').highcharts({
+    $jq('#highchart').highcharts({
         chart: {
             renderTo: '#highchart',
         },
