@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Robo Diagnosis</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="image/robo-icon.png" type="image/x-icon">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -21,7 +22,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
+    <!-- <div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -33,7 +34,7 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">myDemo</a>
+            <a class="navbar-brand" href="#/">Robo Health</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -46,15 +47,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="container">
+    <div class="container-fluid">
     <div ng-view=""></div>
     </div>
 
     <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <div class="container-fluid pull-right">
+        <p><span class="glyphicon"></span> &copy; Turboware 2016</p>
       </div>
     </div>
 
@@ -82,6 +83,10 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/highcharts/highcharts.js"></script>
+    <script src="bower_components/highcharts/highcharts-more.js"></script>
+    <script src="bower_components/highcharts/modules/exporting.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -89,6 +94,14 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+
+        <!-- Services -->
+        <script src="scripts/services/alertDetailsService.js"></script>
+        <script src="scripts/services/machineListService.js"></script>
+        <script src="scripts/services/metricInfoService.js"></script>
+        <script src="scripts/services/notificationDetailService.js"></script>
+        <!-- Directive -->
+        <script src="scripts/directives/header.js"></script>
         <!-- endbuild -->
 </body>
 </html>

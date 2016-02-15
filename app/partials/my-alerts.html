@@ -1,0 +1,25 @@
+<div class="col-md-12" style="padding:7px"></div>
+<div class="col-md-12">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Alert ID</th>
+                <th>Description</th>
+                <th>Machine</th>
+                <th>Metric</th>
+                <th>Timestamp</th>
+                <th>Feedback / Action taken</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="data in alertData">
+                <td>{{data.m_alert_id}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{data.timestamp}}</td>
+                <td>{{data.alert_priority}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

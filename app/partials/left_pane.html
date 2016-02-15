@@ -1,0 +1,10 @@
+<uib-accordion>
+    <uib-accordion-group ng-repeat=" macname in machineList">
+        <uib-accordion-heading>
+            <span ng-click="status=!status" ng-class="{'glyphicon glyphicon-plus-sign':!status,'glyphicon glyphicon-minus-sign':status }"></span>&nbsp;&nbsp;{{macname.machine_name}}
+        </uib-accordion-heading>
+        <span ng-repeat="mac in macname.m_metric">
+                        {{mac.m_metric_name}}
+                    </span>
+    </uib-accordion-group>
+</uib-accordion>

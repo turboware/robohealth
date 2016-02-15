@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<!-- <div class="jumbotron">
   <h1>'Allo, 'Allo!</h1>
   <p class="lead">
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
@@ -20,4 +20,54 @@
 
   <h4>Karma</h4>
   <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+</div> -->
+
+<body class="container-fluid" ng-controller="mainCtrl">
+    <div class="row" style="padding:5px">
+    </div>
+    <div header-dir></div>
+    <div class="row" style="padding:5px"></div>
+    <div class="col-md-12 pad-0" style="background-color:#868686;height:850px">
+        <div class="col-md-2 leftPane">
+            <!--  <div left-pane-dir></div> -->
+            <div class="col-md-12" style="padding:7px"></div>
+            <h3 class="left-pane-head">My Machines</h3>
+            <div class="col-md-12" style="padding:7px"></div>
+            <div class="col-md-12 pad-0">
+                <div class="left-pane-menu">
+                    <uib-accordion close-others="oneAtATime">
+                        <uib-accordion-group ng-repeat=" macname in machineList" is-open="status.open">
+                            <uib-accordion-heading>
+                                <span ng-class="{'glyphicon glyphicon-plus-sign ':!status.open,'glyphicon glyphicon-minus-sign':status.open}">&nbsp;&nbsp;</span><span class="left-pane-heading">{{macname.machine_name}}</span>
+                            </uib-accordion-heading>
+                            <span ng-repeat="mac in macname.m_metric">
+                        <p ><a href="#/MetricInfo" ng-click="setsendId(macname.machine_name,macname.alert_priority,mac.m_metric_name)">{{mac.m_metric_name}}</a></p>
+                    </span>
+                        </uib-accordion-group>
+                    </uib-accordion>
+                </div>
+            </div>
+            <div class="col-md-12 pad-0">
+                <h3 class="left-pane-head">My Alerts</h3>
+            </div>
+            <div class="col-md-12" style="padding:7px"></div>
+            <div class="col-md-12 pad-0">
+                <ul>
+                    <li>
+                        <div class="panel panel-default mar-0">
+                            <div class="panel-heading left-pane-heading"><a href="#/MyAlerts">Manage my alerts</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel panel-default">
+                            <div class="panel-heading left-pane-heading"><a href="#/MyAlerts">View historical alerts</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10 right-pane">
+            
+        </div>
+    </div>
+</body>

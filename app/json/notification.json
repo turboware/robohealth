@@ -1,0 +1,63 @@
+[{
+    "dashItem": "Machine",
+    "total": 10,
+    "attention": [{
+        "name": "PS001",
+        "health": "high"
+    }, {
+        "name": "PS012",
+        "health": "high"
+    }, {
+        "name": "PS017",
+        "health": "critical"
+    }, {
+        "name": "PS003",
+        "health": "critical"
+    }, {
+        "name": "PS016",
+        "health": "high"
+    }, {
+        "name": "PS001",
+        "health": "critical"
+    }, {
+        "name": "PS017",
+        "health": "high"
+    }, {
+        "name": "PS002",
+        "health": "critical"
+    }]
+}, {
+    "dashItem": "Alert",
+    "total": 27,
+    "attention": [{
+        "health": "high",
+        "alert_id": 835
+    }, {
+        "health": "high",
+        "alert_id": 822
+    }, {
+        "health": "high",
+        "alert_id": 842
+    }, {
+        "health": "high",
+        "alert_id": 840
+    }, {
+        "health": "high",
+        "alert_id": 826
+    }, {
+        "health": "critical",
+        "alert_id": 839
+    }, {
+        "health": "high",
+        "alert_id": 819
+    }, {
+        "health": "critical",
+        "alert_id": 829
+    }, {
+        "health": "critical",
+        "alert_id": 834
+    }, {
+        "health": "critical",
+        "alert_id": 836
+    }]
+}]

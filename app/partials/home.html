@@ -1,0 +1,49 @@
+<div class="col-md-12" style="padding:7px"></div>
+<div class="col-md-12 pad-0 right-content">
+    <div class="col-md-4" style="text-align:center">
+        <h3>Machines
+</h3>
+        <p class="sub-heading">In the system
+        </p>
+        <p class="numbers">{{notificationDetail[0].total}}</p>
+    </div>
+    <div class="col-md-4" style="text-align:center">
+        <h3>Machines</h3>
+        <p class="sub-heading">That need immediate attention</p>
+        <p class="numbers">{{(notificationDetail[0].attention| duplicates).length}}</p>
+    </div>
+    <div class="col-md-4" style="text-align:center">
+        <h3>Machines</h3>
+        <p class="sub-heading">That need immediate attention
+        </p>
+        <ul>
+            <li ng-repeat="mac in notificationDetail[0].attention| duplicates |orderBy:['-health','name']
+">
+                <h4><span ng-class="mac.health==='critical'?'glyphicon glyphicon-warning-sign yellow':'glyphicon glyphicon-ban-circle red'">&nbsp;</span><span>{{mac.name}}</span></h4>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col-md-12 pad-0">
+    <div class="col-md-4" style="text-align:center">
+        <h3>Alerts</h3>
+        <p class="sub-heading">In the system
+        </p>
+        <p class="numbers">{{notificationDetail[1].total}}</p>
+    </div>
+    <div class="col-md-4" style="text-align:center">
+        <h3>Alerts</h3>
+        <p class="sub-heading">That need immediate attention</p>
+        <p class="numbers">{{(notificationDetail[1].attention| duplicates).length}}</p>
+    </div>
+    <div class="col-md-4" style="text-align:center">
+        <h3>Alerts</h3>
+        <p class="sub-heading">That need immediate attention
+        </p>
+        <ul>
+            <li ng-repeat="mac in notificationDetail[1].attention | duplicates |orderBy:['-health','alert_id']">
+                <h4><span ng-class="mac.health==='critical'?'glyphicon glyphicon-warning-sign yellow':'glyphicon glyphicon-ban-circle red'">&nbsp;</span><span>{{mac.alert_id}}</span></h4>
+            </li>
+        </ul>
+    </div>
+</div>

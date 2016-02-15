@@ -81,3 +81,146 @@ body {
     border-bottom: 0;
   }
 }
+
+
+
+.ge-logo {
+    background: transparent url("../images/loading.svg") no-repeat;
+    background-size: contain;
+    border: 0;
+    float: left;
+    font: 0/0 a;
+    height: 35px;
+    margin: 0px;
+    width: 35px;
+}
+
+.page-header {
+    margin: 0px;
+    border: 0px;
+}
+
+img {
+    height: 40px;
+}
+
+.pad-0 {
+    padding: 0px;
+}
+
+.mar-0 {
+    margin: 0px;
+}
+
+body {
+    color: white;
+    background-color: #2b2b2b;
+}
+
+.leftPane {
+    color: black;
+}
+
+.panel-body {
+    height: 170px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.panel-heading {
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+.right-pane {
+    background-color: white;
+    color: black;
+    height: 850px;
+    overflow: auto;
+}
+
+
+/* .right-content: {
+    background-color: #dddddd;
+    height: 300px;
+    overflow-y: scroll;
+}
+ */
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+    padding: 3px;
+    display: block!important;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: rgb(255, 194, 0);
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+table {
+    color: black;
+}
+
+.sub-heading {
+    color: #5a5a5a;
+}
+
+.numbers {
+    font-size: 80px;
+}
+
+h4 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.glyphicon-plus-sign {
+    color: #337ab7;
+}
+
+.glyphicon-minus-sign {
+    color: #337ab7;
+}
+
+.left-pane-head {
+    color: white;
+}
+
+a:hover {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.left-pane-heading {
+    color: #337ab7;
+    font-size: 16px;
+}
+
+.paragraph {
+    font-size: 16px;
+}
+
+#highchart {
+    border: 1px solid black;
+}
+
+table>thead>tr>th {
+    background-color: #337ab7;
+    color: white;
+}
